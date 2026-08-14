@@ -1,13 +1,14 @@
 import Link from "next/link";
-import { IconGitHub, IconLinkedIn, IconX } from "@/components/ui/icons";
+// Social profiles are not live yet — restore icons when URLs are ready.
+// import { IconGitHub, IconLinkedIn, IconX } from "@/components/ui/icons";
 import { Logo } from "@/components/ui/logo";
 import { footerNav, PRODUCT_NAME } from "@/lib/constants";
 
-const social = [
-  { href: "#", label: "X / Twitter", icon: IconX },
-  { href: "#", label: "LinkedIn", icon: IconLinkedIn },
-  { href: "#", label: "GitHub", icon: IconGitHub },
-];
+// const social = [
+//   { href: "#", label: "X / Twitter", icon: IconX },
+//   { href: "#", label: "LinkedIn", icon: IconLinkedIn },
+//   { href: "#", label: "GitHub", icon: IconGitHub },
+// ];
 
 export function Footer() {
   return (
@@ -20,6 +21,7 @@ export function Footer() {
               Create, schedule, and run email campaigns on the SMTP
               infrastructure you already control.
             </p>
+            {/* Social icons hidden until accounts exist
             <div className="mt-5 flex items-center gap-2">
               {social.map((item) => (
                 <a
@@ -32,6 +34,7 @@ export function Footer() {
                 </a>
               ))}
             </div>
+            */}
           </div>
 
           <FooterColumn title="Product" links={footerNav.product} />
